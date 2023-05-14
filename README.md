@@ -1,4 +1,4 @@
-# roadGen
+# An OpenDRIVE static scenario file importer for Blender
 Import OpenDRIVE roads into Blender as 3D meshes. This repository is based on the [libOpenDRIVE](https://github.com/grepthat/libOpenDRIVE). 
 
 # Quick Start

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenDRIVE>
+    <header name="myroad" revMajor="1" revMinor="5" date="2023-05-14 02:22:05.263841" north="0.0" south="0.0" east="0.0" west="0.0"/>
+    <road rule="RHT" id="0" junction="-1" length="1000">
+        <link/>
+        <planView>
+            <geometry s="0" x="0" y="0" hdg="0" length="1000">
+                <line/>
+            </geometry>
+        </planView>
+        <elevationProfile/>
+        <lateralProfile/>
+        <lanes>
+            <laneSection s="0">
+                <left>
+                    <lane id="2" type="driving" level="false">
+                        <link/>
+                        <width a="3" b="0" c="0" d="0" sOffset="0"/>
+                        <roadMark sOffset="0" type="solid" weight="standard" color="standard" height="0.02" width="0.2"/>
+                    </lane>
+                    <lane id="1" type="driving" level="false">
+                        <link/>
+                        <width a="3" b="0" c="0" d="0" sOffset="0"/>
+                        <roadMark sOffset="0" type="broken" weight="standard" color="standard" height="0.02" width="0.2"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level="false">
+                        <roadMark sOffset="0" type="solid" weight="standard" color="standard" height="0.02" width="0.2"/>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level="false">
+                        <link/>
+                        <width a="3" b="0" c="0" d="0" sOffset="0"/>
+                        <roadMark sOffset="0" type="broken" weight="standard" color="standard" height="0.02" width="0.2"/>
+                    </lane>
+                    <lane id="-2" type="driving" level="false">
+                        <link/>
+                        <width a="3" b="0" c="0" d="0" sOffset="0"/>
+                        <roadMark sOffset="0" type="solid" weight="standard" color="standard" height="0.02" width="0.2"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+        <objects>
+            <object id="0" s="0" t="6.8" subtype="None" dynamic="no" zOffset="0.4" pitch="0" roll="0" height="0.3" name="guardRail" type="barrier" orientation="none" hdg="3.141592653589793">
+                <repeat length="1000" distance="0" s="0" tStart="6.8" tEnd="6.8" heightStart="0.3" heightEnd="0.3" zOffsetStart="0.4" zOffsetEnd="0.4"/>
+            </object>
+            <object id="1" s="0" t="-6.8" subtype="None" dynamic="no" zOffset="0.4" pitch="0" roll="0" height="0.3" name="guardRail" type="barrier" orientation="none" hdg="0.0">
+                <repeat length="1000" distance="0" s="0" tStart="-6.8" tEnd="-6.8" heightStart="0.3" heightEnd="0.3" zOffsetStart="0.4" zOffsetEnd="0.4"/>
+            </object>
+            <object id="2" s="25" t="6.85" subtype="None" dynamic="no" zOffset="0" pitch="0" roll="0" height="1" name="delineator" type="pole" orientation="none" hdg="3.141592653589793">
+                <repeat length="975" distance="50" s="25" tStart="6.85" tEnd="6.85" heightStart="1" heightEnd="1" zOffsetStart="0" zOffsetEnd="0"/>
+            </object>
+            <object id="3" s="25" t="-6.85" subtype="None" dynamic="no" zOffset="0" pitch="0" roll="0" height="1" name="delineator" type="pole" orientation="none" hdg="0.0">
+                <repeat length="975" distance="50" s="25" tStart="-6.85" tEnd="-6.85" heightStart="1" heightEnd="1" zOffsetStart="0" zOffsetEnd="0"/>
+            </object>
+            <object id="4" s="30" t="-6" subtype="None" dynamic="no" zOffset="0" pitch="0" roll="0" name="emergencyCallBox" type="pole" orientation="none" hdg="0"/>
+            <object id="5" s="0" t="0" subtype="None" dynamic="no" zOffset="0" pitch="0" roll="0" height="0.75" name="jerseyBarrier" type="barrier" orientation="none" hdg="0">
+                <repeat length="25" distance="0" s="240" tStart="0" tEnd="0" heightStart="0.75" heightEnd="0.75" zOffsetStart="0" zOffsetEnd="0"/>
+            </object>
+        </objects>
+    </road>
+</OpenDRIVE>

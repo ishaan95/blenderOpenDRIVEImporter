@@ -1,7 +1,6 @@
 import bpy
 import sys
 import subprocess
-import scenariogeneration
 
 argv = sys.argv
 argv = argv[argv.index("--") + 1:]
@@ -18,4 +17,4 @@ bpy.data.objects['roadmarkings'].parent = bpy.data.objects['lanes']
 bpy.data.objects.remove(bpy.data.objects['Cube'])
 bpy.data.objects.remove(bpy.data.objects['Light'])
 bpy.data.objects.remove(bpy.data.objects['Camera'])
-#bpy.ops.export_scene.fbx(filepath=argv[2], axis_forward='X', axis_up='Z', embed_textures=True)
+bpy.ops.export_scene.fbx(filepath=argv[2], axis_forward='X', axis_up='Z', embed_textures=True)

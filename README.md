@@ -17,7 +17,11 @@ Assuming you have Blender installed and you are able to run the `blender --pytho
 - As written in the quick start before, run `python odrgen.py` and `genobj.bat`.  
 - Run `make launch` to start the simulator. When the Unreal Editor opens, click the `play` button.
 - Run `carlaimport.bat`
-- Check if map is imported into CARLA. 
+- Check if map is imported into CARLA.
+
+Here's a procedurally generated 3 way intersection generated in `odrgen.py` in Blender and CARLA:
+![blenderJunction](assets/blenderJunction.png)
+![CARLAJunction](assets/CarlaJunction.png)
 
 # Further work
 - You can further generate .xodr files using python by referring to the [scenariogeneration](https://github.com/pyoscx/scenariogeneration) library or by modifying the `odrgen.py` script.

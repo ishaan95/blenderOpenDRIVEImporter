@@ -4,8 +4,9 @@ Import OpenDRIVE roads into Blender as 3D meshes. This repository is based on th
 # Quick Start
 Assuming that you are using a Windows machine and Blender is installed and you are able to run the `blender --python` command from your command prompt/terminal:
 - Create a python environment with python 3.8 and where `pip install scenariogeneration` is done.
-- Run `python odrgen.py`. This will generate the `junction.xodr` file in the libOpenDRIVE directory using the `scenariogeneration` python package.
-- Run `genobj.bat`. This will run the opendrive parser library executable for a default `junction.xodr` file and run the Blender python command to import the generated .obj files into Blender. It will also generate the .fbx files in the project directory. 
+- Run `python odrgen.py`. This will generate the `junction.xodr` file in the libOpenDRIVE directory using the `scenariogeneration` python package. Alternatively, you can also just place a .xodr file in the libOpenDRIVE directory directly.
+- `cd libOpenDRIVE` and run `workflow.bat`. This will install the test-xodr executable in the `build/Release` directory that will be the one generating the mesh obj files.  
+- Make appropriate edits in the `genobj.bat` file according to the name of the .xodr file and run it. This will run the opendrive parser library executable (`test-xodr.exe`) for an xodr file and run the Blender python command to import the generated .obj files into Blender. It will also generate the .fbx files in the project directory. 
 Here are some outputs:
 ![Loopy road](assets/loopy.png)
 ![junction-3way](assets/junction-3way.png)

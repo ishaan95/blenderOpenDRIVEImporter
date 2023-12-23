@@ -25,6 +25,9 @@ Here's a procedurally generated 3 way intersection generated in `odrgen.py` in B
 ![blenderJunction](assets/blenderJunction.png)
 ![CARLAJunction](assets/CarlaJunction.png)
 
+# A small additional feature
+As an experiment, I added some GPT-4 API calls along with this pipeline to accept a more open range of inputs for generating roads, such as "generate a T intersection." Here is the video demo of this experiment - [link to demo](https://drive.google.com/file/d/1-HnvLGlY6SS_WDFBRq8MVn2ZGD9tB39h/view?usp=sharing). 
+
 # Further work
 - You can further generate .xodr files using python by referring to the [scenariogeneration](https://github.com/pyoscx/scenariogeneration) library or by modifying the `odrgen.py` script.
 - You can further generate the larger 3D scene beyond the road (road signs, trees, fences, buildings) using the Blender python API by modifying the `import.py` script.
